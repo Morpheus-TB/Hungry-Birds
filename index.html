@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hungry Birds Hotel & Resort | Sanctuary of Luxury</title>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo">
+        <i class="fa-solid fa-dove"></i>
+        <span>HUNGRY BIRDS</span>
+      </a>
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#rooms" class="nav-link">Rooms</a></li>
+          <li><a href="#facilities" class="nav-link">Facilities</a></li>
+          <li><a href="#dining" class="nav-link">Dining</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#booking" class="btn btn-accent nav-btn">Book Now</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="sub-heading">Welcome To Sanctuary</span>
+      <h1>HUNGRY BIRDS</h1>
+      <p class="tagline">Luxury Hospitality Nestled in Nature's Heart</p>
+      <div class="hero-buttons">
+        <a href="#booking" class="btn btn-primary">Book Your Stay</a>
+        <a href="#rooms" class="btn btn-outline">Explore Suites</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section-padding">
+    <div class="container grid-2">
+      <div class="about-image-wrapper">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80" alt="Hungry Birds Hotel Aerial View" class="about-img main-img">
+        <div class="badge-experience">
+          <span class="number">15+</span>
+          <span class="text">Years of Excellence</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-subtitle">An Unrivaled Haven</span>
+        <h2 class="section-title">Where Luxury Takes Flight</h2>
+        <p class="description">
+          Set against serene botanical views, <strong>Hungry Birds Hotel & Resort</strong> is an oasis designed for discerning travelers. Whether seeking tranquility or indulging in world-class culinary art, our sanctuary blends nature-inspired elegance with timeless comfort.
+        </p>
+        <div class="highlights">
+          <div class="highlight-item">
+            <i class="fa-solid fa-feather-pointed"></i>
+            <div>
+              <h4>Elegantly Crafted</h4>
+              <p>Architectural design that blends luxury with organic surroundings.</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <i class="fa-solid fa-utensils"></i>
+            <div>
+              <h4>Culinary Masterpieces</h4>
+              <p>Home to the famous 'Nest Bistro', serving organic gourmet delicacies.</p>
+            </div>
+          </div>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-box">
+            <h3>120+</h3>
+            <p>Luxury Rooms</p>
+          </div>
+          <div class="stat-box">
+            <h3>4.9 ★</h3>
+            <p>Guest Rating</p>
+          </div>
+          <div class="stat-box">
+            <h3>35k+</h3>
+            <p>Happy Guests</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms & Suites -->
+  <section id="rooms" class="rooms section-padding bg-light">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Accommodations</span>
+        <h2 class="section-title">Rooms & Presidential Suites</h2>
+        <p class="section-description">Choose your ideal retreat from our carefully styled accommodations.</p>
+      </div>
+
+      <!-- Interactive Room Filter -->
+      <div class="room-filters text-center">
+        <button class="filter-btn active" data-filter="all">All Rooms</button>
+        <button class="filter-btn" data-filter="suite">Suites</button>
+        <button class="filter-btn" data-filter="deluxe">Deluxe</button>
+        <button class="filter-btn" data-filter="villa">Private Villa</button>
+      </div>
+
+      <div class="rooms-grid">
+        <!-- Room 1 -->
+        <div class="room-card" data-category="deluxe">
+          <div class="room-img-container">
+            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="Canopy Deluxe Room">
+            <span class="room-price">KSh 29,500 <span>/ night</span></span>
+          </div>
+          <div class="room-content">
+            <h3>Canopy Deluxe Room</h3>
+            <p>A tranquil haven featuring panoramic views of our bird sanctuary and modern amenities.</p>
+            <ul class="room-features">
+              <li><i class="fa-solid fa-wifi"></i> Free Wi-Fi</li>
+              <li><i class="fa-solid fa-bed"></i> King Size Bed</li>
+              <li><i class="fa-solid fa-mountain-sun"></i> Forest View</li>
+            </ul>
+            <a href="#booking" class="btn btn-secondary btn-full book-room-btn" data-room="Canopy Deluxe Room">Reserve Room</a>
+          </div>
+        </div>
+
+        <!-- Room 2 -->
+        <div class="room-card" data-category="suite">
+          <div class="room-img-container">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="The Skylark Suite">
+            <span class="room-price">KSh 52,000 <span>/ night</span></span>
+          </div>
+          <div class="room-content">
+            <h3>The Skylark Executive Suite</h3>
+            <p>Expansive living quarters with a private balcony, marble bathroom, and personal butler.</p>
+            <ul class="room-features">
+              <li><i class="fa-solid fa-hot-tub-person"></i> Jacuzzi</li>
+              <li><i class="fa-solid fa-tv"></i> 65" OLED TV</li>
+              <li><i class="fa-solid fa-martini-glass-citrus"></i> Mini Bar</li>
+            </ul>
+            <a href="#booking" class="btn btn-secondary btn-full book-room-btn" data-room="The Skylark Executive Suite">Reserve Room</a>
+          </div>
+        </div>
+
+        <!-- Room 3 -->
+        <div class="room-card" data-category="villa">
+          <div class="room-img-container">
+            <img src="https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=800&q=80" alt="Avian Luxury Villa">
+            <span class="room-price">KSh 89,000 <span>/ night</span></span>
+          </div>
+          <div class="room-content">
+            <h3>Avian Private Villa</h3>
+            <p>Exclusive detached villa with private infinity pool, outdoor lounge, and private chef on request.</p>
+            <ul class="room-features">
+              <li><i class="fa-solid fa-water-ladder"></i> Private Pool</li>
+              <li><i class="fa-solid fa-utensils"></i> Private Dining</li>
+              <li><i class="fa-solid fa-car"></i> Airport Transfer</li>
+            </ul>
+            <a href="#booking" class="btn btn-secondary btn-full book-room-btn" data-room="Avian Private Villa">Reserve Room</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities & Services -->
+  <section id="facilities" class="facilities section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">World-Class Services</span>
+        <h2 class="section-title">Hotel Facilities</h2>
+      </div>
+      <div class="facilities-grid">
+        <div class="facility-card">
+          <i class="fa-solid fa-person-swimming facility-icon"></i>
+          <h3>Infinity Pool</h3>
+          <p>Temperature-controlled rooftop pool with sunset bar views.</p>
+        </div>
+        <div class="facility-card">
+          <i class="fa-solid fa-spa facility-icon"></i>
+          <h3>Nest Spa & Wellness</h3>
+          <p>Holistic rejuvenation massages and natural skin treatments.</p>
+        </div>
+        <div class="facility-card">
+          <i class="fa-solid fa-dumbbell facility-icon"></i>
+          <h3>Fitness Studio</h3>
+          <p>Fully equipped 24/7 gym with personal fitness trainers.</p>
+        </div>
+        <div class="facility-card">
+          <i class="fa-solid fa-wifi facility-icon"></i>
+          <h3>Ultra-Fast Wi-Fi</h3>
+          <p>High-speed gigabit internet connectivity across all grounds.</p>
+        </div>
+        <div class="facility-card">
+          <i class="fa-solid fa-champagne-glasses facility-icon"></i>
+          <h3>Event Hall</h3>
+          <p>Modern conference and wedding facilities for up to 500 guests.</p>
+        </div>
+        <div class="facility-card">
+          <i class="fa-solid fa-plane-arrival facility-icon"></i>
+          <h3>Airport Transfer</h3>
+          <p>Complimentary luxury chauffeur service to and from airport terminals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dining Section -->
+  <section id="dining" class="dining section-padding bg-light">
+    <div class="container grid-2 align-center">
+      <div class="dining-content">
+        <span class="section-subtitle">Fine Dining</span>
+        <h2 class="section-title">The Nest Bistro & Lounge</h2>
+        <p>Indulge your palate with organic, locally sourced culinary delights carefully crafted by world-renowned chefs. From sunlit breakfasts to intimate candlelight dinners.</p>
+        <div class="dining-hours">
+          <div class="hour-item">
+            <strong>Breakfast:</strong> 06:30 AM – 10:30 AM
+          </div>
+          <div class="hour-item">
+            <strong>Lunch & Dinner:</strong> 12:00 PM – 11:00 PM
+          </div>
+        </div>
+        <div class="featured-dishes">
+          <h4>Signature Dishes:</h4>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Truffle Infused Roasted Duck</li>
+            <li><i class="fa-solid fa-circle-check"></i> Wild Berry Parfait with Honeycomb</li>
+            <li><i class="fa-solid fa-circle-check"></i> Artisan Woodfired Seafood Platter</li>
+          </ul>
+        </div>
+      </div>
+      <div class="dining-gallery">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Restaurant Dining Area" class="dining-img shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Gallery & Lightbox -->
+  <section id="gallery" class="gallery section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Visual Experience</span>
+        <h2 class="section-title">Hotel Gallery</h2>
+        <p class="section-description">Click any image to view in full resolution.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80" alt="Hotel Exterior">
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80" alt="Resort Pool">
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=600&q=80" alt="Luxury Suite Interior">
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="Spa and Wellness">
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=600&q=80" alt="Cocktail Lounge Bar">
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80" alt="Fine Wine & Dining">
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Enlarged View">
+  </div>
+
+  <!-- Testimonials Section (Slider) -->
+  <section class="testimonials section-padding bg-light">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Guest Feedback</span>
+        <h2 class="section-title">What Our Guests Say</h2>
+      </div>
+
+      <div class="testimonial-slider">
+        <div class="testimonial-card active">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Hungry Birds Hotel exceeded every expectation. The tranquil forest backdrop paired with world-class dining made our anniversary unforgettable!"</p>
+          <div class="guest-info">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Sarah Jenkins">
+            <div>
+              <h4>Sarah Jenkins</h4>
+              <span>London, UK</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"The Nest Bistro serves some of the finest food I have had anywhere in the world. Immaculate service and breathtaking modern suites."</p>
+          <div class="guest-info">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Vance">
+            <div>
+              <h4>Marcus Vance</h4>
+              <span>New York, USA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"From airport pickup to checkout, everything was seamless. High-speed Wi-Fi, friendly staff, and true peace and quiet."</p>
+          <div class="guest-info">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Amina Chen">
+            <div>
+              <h4>Amina Chen</h4>
+              <span>Singapore</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+          <button id="prev-btn" aria-label="Previous Review"><i class="fa-solid fa-chevron-left"></i></button>
+          <button id="next-btn" aria-label="Next Review"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation / Booking Section -->
+  <section id="booking" class="booking section-padding">
+    <div class="container">
+      <div class="booking-wrapper">
+        <div class="booking-text text-center">
+          <span class="section-subtitle light">Reservations</span>
+          <h2 class="section-title light">Book Your Sanctuary Stay</h2>
+          <p class="light-text">Complete the form below to secure your suite. Instant confirmation notification upon booking.</p>
+        </div>
+
+        <form id="booking-form" class="booking-form" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="full-name">Full Name *</label>
+              <input type="text" id="full-name" placeholder="e.g., Jane Doe" required>
+              <span class="error-msg">Please enter your full name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" placeholder="jane@example.com" required>
+              <span class="error-msg">Please enter a valid email address.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" placeholder="+1 (555) 000-0000" required>
+              <span class="error-msg">Please enter a phone number.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="room-select">Select Suite *</label>
+              <select id="room-select" required>
+                <option value="">-- Choose Accommodation --</option>
+                <option value="Canopy Deluxe Room">Canopy Deluxe Room (KSh 29,500/night)</option>
+                <option value="The Skylark Executive Suite">The Skylark Executive Suite (KSh 52,000/night)</option>
+                <option value="Avian Private Villa">Avian Private Villa (KSh 89,000/night)</option>
+              </select>
+              <span class="error-msg">Please select a room type.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="check-in">Check-in Date *</label>
+              <input type="date" id="check-in" required>
+              <span class="error-msg">Select a valid check-in date.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="check-out">Check-out Date *</label>
+              <input type="date" id="check-out" required>
+              <span class="error-msg">Check-out must be after check-in.</span>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="guests">Number of Guests *</label>
+              <select id="guests" required>
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4+">4+ Guests</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="requests">Special Requests</label>
+              <textarea id="requests" rows="3" placeholder="Dietary needs, airport transfer notes, late check-in request..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-accent btn-full submit-btn">Confirm Reservation</button>
+        </form>
+
+        <!-- Booking Success Confirmation Alert -->
+        <div id="booking-alert" class="booking-alert hidden">
+          <i class="fa-solid fa-circle-check success-icon"></i>
+          <h3>Reservation Received!</h3>
+          <p id="alert-details">Thank you for booking with Hungry Birds Hotel. We look forward to hosting you!</p>
+          <button id="alert-close-btn" class="btn btn-primary">Done</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section-padding">
+    <div class="container grid-2">
+      <div class="contact-info">
+        <span class="section-subtitle">Get In Touch</span>
+        <h2 class="section-title">We Are Here For You</h2>
+        <p class="description">Have questions regarding group bookings, private events, or special dietary options? Contact our front office team anytime.</p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Fedha / Nyayo, Nairobi, Kenya</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>Phone Reservations</h4>
+              <p>+254 20 555 0101 / +254 712 345 678</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email Inquiries</h4>
+              <p>concierge@hungrybirdshotel.co.ke</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <h4>Front Desk Hours</h4>
+              <p>24/7 Round-the-clock Concierge</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map Container -->
+      <div class="map-container">
+        <iframe title="Hotel Location Map" src="https://www.google.com/maps?q=Fedha%20Nyayo%20Nairobi%20Kenya&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand-logo light">
+          <i class="fa-solid fa-dove"></i>
+          <span>HUNGRY BIRDS</span>
+        </a>
+        <p>A tranquil luxury retreat focused on world-class hospitality, gourmet dining, and sustainable living.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Tripadvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#rooms">Suites & Rooms</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#dining">Nest Bistro</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Support</h4>
+        <ul> 
+          <li><a href="#contact">Contact Concierge</a></li>
+          <li><a href="#booking">Bookings</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Subscribe for exclusive seasonal offers and VIP privileges.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-accent"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Hungry Birds Hotel & Resort. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
